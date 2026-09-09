@@ -59,7 +59,7 @@ export const Contact: React.FC = () => {
       icon: '📍',
       label: 'Head Office',
       val: CONTACT_INFO.address,
-      sub: 'Wardha, Maharashtra',
+      sub: 'Get Directions on Google Maps ↗',
       href: CONTACT_INFO.mapsLink,
       target: '_blank'
     }
@@ -90,19 +90,19 @@ export const Contact: React.FC = () => {
                   href={c.href}
                   target={c.target}
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 rounded-xl border border-[#E5E2DA] bg-[#F8F7F4] hover:border-[#D4580A] hover:bg-[#F5E4D8]/30 transition-all duration-200 group"
+                  className="flex items-start gap-4 p-4 rounded-xl border border-[#E5E2DA] bg-[#F8F7F4] hover:border-[#D4580A] hover:bg-[#F5E4D8]/30 transition-all duration-200 group"
                 >
-                  <div className="w-11 h-11 bg-white rounded-lg flex items-center justify-center text-xl shrink-0 shadow-sm group-hover:scale-105 transition-transform">
+                  <div className="w-11 h-11 bg-white rounded-lg flex items-center justify-center text-xl shrink-0 shadow-sm group-hover:scale-105 transition-transform mt-0.5">
                     {c.icon}
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="text-[11px] font-bold text-[#8A8680] uppercase tracking-wider mb-0.5">
                       {c.label}
                     </div>
-                    <div className="font-outfit font-bold text-sm sm:text-base text-[#1B2A4A] truncate">
+                    <div className="font-outfit font-bold text-sm sm:text-base text-[#1B2A4A] leading-snug break-words">
                       {c.val}
                     </div>
-                    <div className="text-xs text-[#8A8680] mt-0.5">{c.sub}</div>
+                    {c.sub && <div className="text-xs text-[#8A8680] mt-1">{c.sub}</div>}
                   </div>
                 </a>
               ))}
