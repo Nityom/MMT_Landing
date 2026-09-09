@@ -12,21 +12,28 @@
   --color-brand-border: #E5E2DA;
   --color-brand-muted: #8A8680;
   --color-brand-body: #3D3A35;
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-outfit: 'Outfit', sans-serif;
-  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Poppins', sans-serif;
+  --font-outfit: 'Poppins', sans-serif;
+  --font-sans: 'Poppins', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
 }
 
 /* Base resets & utilities */
 html {
   scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: 'Poppins', sans-serif;
   background-color: #ffffff;
   color: #3D3A35;
   overflow-x: hidden;
+}
+
+/* Ensure Poppins applies universally */
+*, *::before, *::after {
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Hero Background Grid */
