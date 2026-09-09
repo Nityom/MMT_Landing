@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #1B2A4A;
+  --color-navy-light: #2D4270;
+  --color-accent: #D4580A;
+  --color-accent-light: #F5E4D8;
+  --color-accent-mid: #E8701F;
+  --color-gold: #C8950A;
+  --color-paper: #F2F0EB;
+  --color-offwhite: #F8F7F4;
+  --color-brand-border: #E5E2DA;
+  --color-brand-muted: #8A8680;
+  --color-brand-body: #3D3A35;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-outfit: 'Outfit', sans-serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+/* Base resets & utilities */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #ffffff;
+  color: #3D3A35;
+  overflow-x: hidden;
+}
+
+/* Hero Background Grid */
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(229,226,218,0.4) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(229,226,218,0.4) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Ticker Animation */
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-inner {
+  animation: ticker 30s linear infinite;
+}
+.ticker-inner:hover {
+  animation-play-state: paused;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.float-anim {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Scroll Animation */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F2F0EB;
+}
+::-webkit-scrollbar-thumb {
+  background: #E5E2DA;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8A8680;
+}
