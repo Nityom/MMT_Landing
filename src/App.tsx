@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Navbar } from './components/Navbar'
 import { Footer } from './components/Footer'
 import { FloatingContact } from './components/FloatingContact'
+import { BackToTop } from './components/BackToTop'
 import { ScrollToTop } from './components/ScrollToTop'
 import { Home } from './pages/Home'
 import { PrivacyPolicy } from './pages/PrivacyPolicy'
@@ -26,6 +27,7 @@ export const App: React.FC = () => {
         </main>
         <Footer />
         <FloatingContact />
+        <BackToTop />
       </div>
     </BrowserRouter>
   )
