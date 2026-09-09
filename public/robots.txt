@@ -1,0 +1,6 @@
+# Robots.txt for MMT Advertising Agency (https://mmtagency.in)
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://mmtagency.in/sitemap.xml

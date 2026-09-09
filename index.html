@@ -1,23 +1,211 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/logo.png" />
-    <link rel="shortcut icon" type="image/png" href="/logo.png" />
-    <link rel="apple-touch-icon" href="/logo.png" />
-    <meta name="description" content="MMT Advertising Agency — India's premium outdoor advertising network operating rickshaws & e-rickshaws across cities. Services include vehicle branding, audio recording, banners, and paste campaigns." />
-    <meta name="keywords" content="MMT advertising, rickshaw advertising, e-rickshaw branding, outdoor advertising India, banner advertising, audio advertising" />
-    <meta property="og:title" content="MMT Advertising Agency | Rickshaw & E-Rickshaw Advertising" />
-    <meta property="og:description" content="Reach millions with MMT's mobile billboard network across cities." />
-    <title>MMT Advertising Agency | Mobile Outdoor Advertising</title>
-    <!-- Fonts loaded from HTML to avoid PostCSS ordering issues -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MMT Advertising Agency | Best Advertising Agency in Wardha, Nagpur & Nearby Areas</title>
+
+  <!-- SEO & Search Engine Directives -->
+  <meta name="description"
+    content="MMT Advertising Agency is the leading advertising agency in Wardha & nearby areas across Vidarbha. Specializing in auto rickshaw branding, e-rickshaw advertising, audio loudspeaker announcements, flex banner printing, and hyperlocal campaigns." />
+  <meta name="keywords"
+    content="advertising agency near me, advertising agency in Wardha, advertising agency in Nagpur, outdoor advertising agency nearby, auto rickshaw advertising Wardha, e-rickshaw branding Maharashtra, flex banner printing Wardha, rickshaw mic announcement advertising, outdoor advertising Vidarbha, transit advertising agency, MMT advertising agency" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="author" content="MMT Advertising Agency" />
+  <link rel="canonical" href="https://mmtagency.in/" />
+
+  <!-- Geo Targeting for Local Google Search (Wardha & Vidarbha Region) -->
+  <meta name="geo.region" content="IN-MH" />
+  <meta name="geo.placename" content="Wardha, Maharashtra, India" />
+  <meta name="geo.position" content="20.7453;78.5974" />
+  <meta name="ICBM" content="20.7453, 78.5974" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/logo.png" />
+  <link rel="shortcut icon" type="image/png" href="/logo.png" />
+  <link rel="apple-touch-icon" href="/logo.png" />
+
+  <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+  <meta property="og:site_name" content="MMT Advertising Agency" />
+  <meta property="og:type" content="business.business" />
+  <meta property="og:title" content="MMT Advertising Agency | Top Advertising Agency in Wardha & Nearby Areas" />
+  <meta property="og:description"
+    content="Top-rated advertising agency for auto rickshaw branding, e-rickshaw campaigns, loudspeaker audio announcements, and banner printing across Wardha, Nagpur, Amravati, and nearby regions." />
+  <meta property="og:url" content="https://mmtagency.in/" />
+  <meta property="og:image" content="https://mmtagency.in/hero_image.png" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="business:contact_data:street_address"
+    content="Near Namdev Math, In Opp. of Maruti Temple, Malgujari Pura" />
+  <meta property="business:contact_data:locality" content="Wardha" />
+  <meta property="business:contact_data:region" content="Maharashtra" />
+  <meta property="business:contact_data:postal_code" content="442001" />
+  <meta property="business:contact_data:country_name" content="India" />
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MMT Advertising Agency | Top Advertising Agency in Wardha & Nearby Areas" />
+  <meta name="twitter:description"
+    content="India's leading mobile outdoor advertising network across Wardha, Nagpur, Amravati, and nearby towns." />
+  <meta name="twitter:image" content="https://mmtagency.in/hero_image.png" />
+
+  <!-- Structured Data (Schema.org JSON-LD): LocalBusiness & AdvertisingAgency -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["AdvertisingAgency", "LocalBusiness", "ProfessionalService"],
+      "@id": "https://mmtagency.in/#agency",
+      "name": "MMT Advertising Agency",
+      "alternateName": "Mrunal Multi Task Agency",
+      "legalName": "Mrunal Multi Task Agency",
+      "url": "https://mmtagency.in/",
+      "logo": "https://mmtagency.in/logo.png",
+      "image": "https://mmtagency.in/hero_image.png",
+      "description": "Leading advertising agency in Wardha and nearby Vidarbha areas. Specializing in mobile auto rickshaw branding, e-rickshaw transit campaigns, audio loudspeaker jingles, flex banner printing, and hyperlocal colony promotions.",
+      "telephone": ["+91-9850545111", "+91-9405848968"],
+      "email": "madhav@mmtagency.in",
+      "priceRange": "₹₹",
+      "currenciesAccepted": "INR",
+      "paymentAccepted": "Cash, UPI, Bank Transfer, Cheque",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Near Namdev Math, In Opp. of Maruti Temple, Malgujari Pura",
+        "addressLocality": "Wardha",
+        "addressRegion": "Maharashtra",
+        "postalCode": "442001",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 20.7453,
+        "longitude": 78.5974
+      },
+      "hasMap": "https://maps.google.com/?q=Near+Namdev+Math+Malgujari+Pura+Wardha+Maharashtra+442001",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "08:00",
+          "closes": "21:00"
+        }
+      ],
+      "areaServed": [
+        { "@type": "City", "name": "Wardha" },
+        { "@type": "City", "name": "Nagpur" },
+        { "@type": "City", "name": "Amravati" },
+        { "@type": "City", "name": "Yavatmal" },
+        { "@type": "City", "name": "Chandrapur" },
+        { "@type": "City", "name": "Akola" },
+        { "@type": "City", "name": "Hinganghat" },
+        { "@type": "City", "name": "Pulgaon" },
+        { "@type": "City", "name": "Arvi" },
+        { "@type": "City", "name": "Deoli" },
+        { "@type": "City", "name": "Seloo" },
+        { "@type": "City", "name": "Samudrapur" },
+        { "@type": "AdministrativeArea", "name": "Vidarbha, Maharashtra" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Advertising Agency Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Auto Rickshaw Hood & Back Branding",
+              "description": "Full-body wraps, hood branding, and back panel advertising on auto rickshaws across cities."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "E-Rickshaw Mobile Billboard Advertising",
+              "description": "High-impact electric rickshaw branding for high-density colony and market transit."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Audio Announcement & Loudspeaker Jingle Campaigns",
+              "description": "Professional audio jingle recording, voice-overs, and moving vehicle loudspeaker publicity."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Banner Design & High-Def Flex Printing",
+              "description": "Design and printing of eye-catching outdoor flex banners, posters, and road displays."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Local Colony & Market Saturation Campaigns",
+              "description": "Dedicated mobile vans and street-level advertising saturation targeting specific pin codes and neighborhoods."
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
+  <!-- Structured Data (Schema.org JSON-LD): FAQPage for Local Search Rich Snippets -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which areas does MMT Advertising Agency serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MMT Advertising Agency is headquartered in Wardha, Maharashtra and delivers outdoor advertising campaigns across Wardha, Hinganghat, Pulgaon, Arvi, Deoli, Seloo, as well as nearby regional hubs including Nagpur, Amravati, Yavatmal, Chandrapur, Akola, and the entire Vidarbha region."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What advertising agency services are available in nearby areas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We provide end-to-end advertising agency services: auto rickshaw branding, e-rickshaw transit campaigns, audio loudspeaker announcements, jingle production, flex banner printing, calendar/aarti sangrah publishing, and colony-level paste promotions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I book an advertising campaign in Wardha or nearby cities?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Call us directly at +91 9850545111 or reach out via WhatsApp at +91 94058 48968. You can also visit our office at Malgujari Pura, Near Namdev Math, Wardha, Maharashtra 442001."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer verified GPS tracking for campaign vehicles?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, our fleet routes are monitored with GPS tracking, and we supply daily photo and video verification logs so you know exactly which streets and colonies your campaign covered."
+          }
+        }
+      ]
+    }
+    </script>
+
+  <!-- Fonts loaded from HTML to avoid PostCSS ordering issues -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>

@@ -28,7 +28,7 @@ export const Hero: React.FC = () => {
           {/* Left Content */}
           <div>
             <div className="inline-block bg-[#F5E4D8] text-[#D4580A] font-outfit font-bold text-xs tracking-wider uppercase px-3 py-1.5 rounded-full mb-6">
-              India's Mobile Outdoor Network
+              #1 Advertising Agency in Wardha & Nearby Areas
             </div>
 
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#1B2A4A] leading-[1.12] mb-6">
@@ -38,7 +38,7 @@ export const Hero: React.FC = () => {
             </h1>
 
             <p className="text-base sm:text-lg text-[#3D3A35] leading-relaxed max-w-lg mb-8">
-              MMT Advertising Agency runs a premium fleet of <strong>rickshaws & e-rickshaws</strong> across cities and custom localities — delivering audio, visual, and paste campaigns with unmatched reach.
+              MMT Advertising Agency runs a premium fleet of <strong>rickshaws & e-rickshaws</strong> across Wardha, Nagpur, Amravati, and nearby Vidarbha towns — delivering audio announcements, visual branding, and high-impact street campaigns.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-12">
